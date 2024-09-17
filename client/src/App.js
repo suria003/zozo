@@ -1,16 +1,27 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Navigation from "./Components/Nav/Navigation";
-import Index from "./Components/Index/Index";
+import Navbar from "./Components/Index/Child/Navbar.jsx";
 
-export default function App() {
+import Navigation from "./Components/Nav/Navigation";
+import Footer from "./Components/Footer/Footer";
+
+import Index from "./Components/Index/Index.jsx";
+
+function App() {
   return (
-    <Router>
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<Index />} />
-      </Routes>
-    </Router>
+    <React.Fragment>
+      <Router>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Index />} />
+
+          <Route path="/about" element={<Navbar />}/>
+        </Routes>
+        <Footer />
+      </Router>
+    </React.Fragment>
   );
 }
+
+export default App;
