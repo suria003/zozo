@@ -1,0 +1,4 @@
+input:not(:placeholder-shown)~button {
+    opacity: 1;
+    visibility: visible;
+}
