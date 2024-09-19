@@ -1,0 +1,13 @@
+.bookmarkBtn:hover .IconContainer {
+    width: 90px;
+}
+
+.bookmarkBtn:hover .text {
+    transform: translateX(10px);
+width: 0;
+font-size: 0;
+}
+
+.bookmarkBtn:active {
+    transform: scale(0.95);
+}
