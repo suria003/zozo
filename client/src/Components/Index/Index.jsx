@@ -2,8 +2,6 @@ import BallonImage from "../../Assets/back.jpg";
 
 import Navbar from "./Child/Navbar";
 import Article from "./Child/Article";
-import NewPost from "./Child/NewPost";
-import Intro from "./Child/Intro";
 
 import { ImLinkedin2 } from "react-icons/im";
 import { ImTwitter } from "react-icons/im";
@@ -40,7 +38,6 @@ export default function Index() {
                     <ImTwitter className="bg-transprent text-[#2e333d] h-[34.8px] w-auto p-[5px] cursor-pointer" />
                     <AiFillInstagram className="bg-transprent text-[#fa7e1e] h-[34.8px] w-auto cursor-pointer" />
                 </div>
-                <Intro />
             </section>
 
             <section className="relative flex flex-row justify-center items-start gap-10 h-auto w-[90%] m-auto">
@@ -49,7 +46,7 @@ export default function Index() {
             </section>
 
             <section className="relative h-auto w-[90%] m-auto mt-10">
-                <NewPost />
+            
             </section>
 
         </main>
