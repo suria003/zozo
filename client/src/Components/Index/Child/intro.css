@@ -1,0 +1,27 @@
+/* Left to Right Scrolling Animation */
+.scroll-left {
+    animation: scrollLeft 20s linear infinite;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Right to Left Scrolling Animation */
+.scroll-right {
+    animation: scrollRight 20s linear infinite reverse;
+}
+
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}

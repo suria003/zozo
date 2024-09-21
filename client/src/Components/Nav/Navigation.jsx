@@ -38,13 +38,13 @@ export default function Navigation() {
         >
             <ul className="relative flex justify-center items-center gap-5 ml-[50px] text-[#ffffff]">
                 <Logo />
-                <li className="flex justify-center items-center gap-1 text-[16px] cursor-pointer text-[#483d30] ml-20">
+                <li className="flex justify-center items-center gap-1 text-[16px] cursor-pointer text-[#483d30] ml-20" onClick={ () => window.location.href = "/"}>
                     <IoHome />Home
                 </li>
                 <li className="flex justify-center items-center gap-1 text-[16px] cursor-pointer text-[#483d30]">
                     Discussion Point <IoMdArrowDropdown className="h-[21.8px] w-auto" />
                 </li>
-                <li className="flex justify-center items-center gap-3 text-[16px] cursor-pointer text-[#483d30]">
+                <li className="flex justify-center items-center gap-3 text-[16px] cursor-pointer text-[#483d30]" onClick={ () => window.location.href = "/post" }>
                     Post
                 </li>
                 <li className="flex justify-center items-center gap-1 text-[16px] cursor-pointer text-[#483d30]">

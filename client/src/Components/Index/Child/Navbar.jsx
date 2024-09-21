@@ -1,6 +1,7 @@
 import AboutInfo from "./Sub-Child/About";
 import SocialMedia from "./Sub-Child/SocialMedia";
 import PopularPost from "./Sub-Child/PopularPost";
+import PostAdvance from "./Sub-Child/PostAdvance";
 
 export default function Navbar() {
     return (
@@ -8,6 +9,7 @@ export default function Navbar() {
             <AboutInfo />
             <SocialMedia />
             <PopularPost />
+            <PostAdvance />
         </section>
     );
 }
