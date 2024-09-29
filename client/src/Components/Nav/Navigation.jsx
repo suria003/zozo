@@ -4,10 +4,13 @@ import { IoHome } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Search from "./Child/Search";
 import DiscussionView from "./Child/discussionView";
+import MoviXView from "./Child/movixView";
 
 export default function Navigation() {
     const [isFixed, setIsFixed] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const [showDiscussion, setShowDiscussion] = useState(false);
+    const [showMoviX, setShowMoviX] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -29,6 +32,16 @@ export default function Navigation() {
         };
     }, [lastScrollY]);
 
+    const toggleDiscussionView = () => {
+        setShowDiscussion((prev) => !prev);
+        setShowMoviX(false);
+    };
+
+    const toggleMoviXView = () => {
+        setShowMoviX((prev) => !prev);
+        setShowDiscussion(false);
+    };
+
     return (
         <nav
             className={`flex justify-between items-center h-[8vh] w-full px-10 z-50 shadow transition-all duration-300 ease-in
@@ -39,23 +52,37 @@ export default function Navigation() {
         >
             <ul className="relative flex justify-center items-center gap-5 ml-[50px] text-[#ffffff]">
                 <Logo />
-                <li className="flex justify-center items-center gap-1 text-[16px] cursor-pointer text-[#483d30] ml-20" onClick={ () => window.location.href = "/"}>
+                <li
+                    className="flex justify-center items-center gap-1 text-[16px] cursor-pointer text-[#483d30] ml-20"
+                    onClick={() => window.location.href = "/"}
+                >
                     <IoHome />Home
                 </li>
-                <li className="flex justify-center items-center gap-1 text-[16px] cursor-pointer text-[#483d30]">
+                <li
+                    className="flex justify-center items-center gap-1 text-[16px] cursor-pointer text-[#483d30]"
+                    onClick={toggleDiscussionView} 
+                >
                     Discussion Point <IoMdArrowDropdown className="h-[21.8px] w-auto" />
-                    <DiscussionView />
                 </li>
-                <li className="flex justify-center items-center gap-3 text-[16px] cursor-pointer text-[#483d30]" onClick={ () => window.location.href = "/post" }>
+                <li
+                    className="flex justify-center items-center gap-3 text-[16px] cursor-pointer text-[#483d30]"
+                    onClick={() => window.location.href = "/post"}
+                >
                     Post
                 </li>
-                <li className="flex justify-center items-center gap-1 text-[16px] cursor-pointer text-[#483d30]">
+                <li
+                    className="flex justify-center items-center gap-1 text-[16px] cursor-pointer text-[#483d30]"
+                    onClick={toggleMoviXView}
+                >
                     MoviX <IoMdArrowDropdown className="h-[21.8px] w-auto" />
                 </li>
             </ul>
             <ul className="flex justify-center items-center gap-10">
                 <Search />
             </ul>
+
+            {showDiscussion && <DiscussionView />}
+            {showMoviX && <MoviXView />}
         </nav>
     );
 }

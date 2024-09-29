@@ -2,37 +2,38 @@ import { useEffect, useState } from "react";
 import { IoMdArrowDropup } from "react-icons/io";
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 
-import tech from "../../../Assets/gif/technology.gif";
-import edu from "../../../Assets/gif/education.gif";
-import health from "../../../Assets/discussGif/health.gif";
-import travel from "../../../Assets/discussGif/travel.gif";
-import food from "../../../Assets/discussGif/food.gif";
-import pets from "../../../Assets/discussGif/pets.gif";
-import finance from "../../../Assets/discussGif/finance.gif";
-import entertainment from "../../../Assets/discussGif/enterntaiment.gif";
-import fitness from "../../../Assets/discussGif/fitness.gif";
-import fashion from "../../../Assets/discussGif/fashion.gif";
-import sports from "../../../Assets/discussGif/success.gif";
-import ai from "../../../Assets/discussGif/ai.gif";
+import action from "../../../Assets/gif/action.gif";
+import adventure from "../../../Assets/gif/adventure.gif";
+import animation from "../../../Assets/gif/animation.gif";
+import comedy from "../../../Assets/gif/comedy.gif";
+import drama from "../../../Assets/gif/drama.gif";
+import war from "../../../Assets/gif/war.gif";
+import fantasy from "../../../Assets/gif/fantasy.gif";
+import horror from "../../../Assets/gif/horror.gif";
+import mistrey from "../../../Assets/gif/mistrey.gif";
+import romantic from "../../../Assets/gif/romantic.gif";
+import sciencefiction from "../../../Assets/gif/scincefiction.gif";
+import crime from "../../../Assets/gif/hacker.gif";
 
-import what from "../../../Assets/what.png";
+import what from "../../../Assets/joker.png";
 
-export default function DiscussionView() {
+export default function MovixView() {
     const [isScrolled, setIsScrolled] = useState(false);
 
     const discussionTopics = [
-        { label: "Technology", imgSrc: tech },
-        { label: "Education", imgSrc: edu },
-        { label: "Health", imgSrc: health },
-        { label: "Travel", imgSrc: travel },
-        { label: "Food", imgSrc: food },
-        { label: "Animals", imgSrc: pets },
-        { label: "Finance", imgSrc: finance },
-        { label: "Entertainment", imgSrc: entertainment },
-        { label: "Fitness", imgSrc: fitness },
-        { label: "Fashion", imgSrc: fashion },
-        { label: "Sports", imgSrc: sports },
-        { label: "AI", imgSrc: ai },
+        { label: "Action", imgSrc: action },
+        { label: "Adventure", imgSrc: adventure },
+        { label: "Comedy", imgSrc: comedy },
+        { label: "Drama", imgSrc: drama },
+        { label: "Horror", imgSrc: horror },
+        { label: "Science Fiction (Sci-Fi)", imgSrc: sciencefiction },
+        { label: "Fantasy", imgSrc: fantasy },
+        { label: "Romance", imgSrc: romantic },
+        { label: "Crime", imgSrc: crime },
+        { label: "Animation", imgSrc: animation },
+        { label: "Mistrey", imgSrc: mistrey },
+        { label: "War", imgSrc: war },
+        { label: "Crime", imgSrc: crime },
     ];
 
     useEffect(() => {
@@ -53,13 +54,13 @@ export default function DiscussionView() {
 
     return (
         <section
-            className="fixed left-[5%] h-auto w-[70%] bg-[#ffffff8a] p-[25px] flex flex-row justify-center items-center gap-2 rounded transition-all duration-500 ease-in-out"
-            style={{ top: isScrolled ? "10%" : "15%" }} 
+            className="fixed left-[5%] h-auto w-[70%] bg-[#0000008a] p-[25px] flex flex-row justify-center items-center gap-2 rounded"
+            style={{ top: isScrolled ? "10%" : "15%" }}
         >
-            <IoMdArrowDropup className="absolute top-[-31px] left-[25%] h-[50px] w-auto text-[#ffffff8a]" />
+            <IoMdArrowDropup className="absolute top-[-31px] left-[45%] h-[50px] w-auto text-[#0000008a]" />
             <div className="h-auto w-[80%] flex flex-col justify-center items-center gap-2">
                 <img src={what} alt="" className="h-full w-auto object-cover" />
-                <h1 className="text-bold text-center text-[#fff] text-2xl uppercase">Discussions</h1>
+                <h1 className="text-bold text-center text-[#fff] text-2xl uppercase">MoviX</h1>
                 <div className="flex flex-row justify-center items-center gap-3">
                     <button className="text-2xl text-[#316FF6]"><FaFacebookSquare /></button>
                     <button className="text-2xl text-[#fa7e1e]"><FaInstagramSquare /></button>
