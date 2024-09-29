@@ -1,6 +1,4 @@
 import BallonImage from "../../Assets/back.jpg";
-
-import Navbar from "./Child/Navbar";
 import Article from "./Child/Article";
 
 import { ImLinkedin2 } from "react-icons/im";
@@ -40,9 +38,8 @@ export default function Index() {
                 </div>
             </section>
 
-            <section className="relative flex flex-row justify-center items-start gap-10 h-auto w-[90%] m-auto">
+            <section className="relative flexjustify-center items-start gap-10 h-auto w-[80%] m-auto ">
                 <Article />
-                <Navbar />
             </section>
 
             <section className="relative h-auto w-[90%] m-auto mt-10">

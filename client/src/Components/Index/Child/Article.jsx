@@ -9,7 +9,7 @@ export default function Article() {
 
             <div className="flex flex-col justify-center items-center gap-3 h-auto">
                 <img src={post} alt="" className="h-auto w-[100%] rounded" />
-                <div className="text-justify text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque similique earum officia repellendus neque incidunt suscipit, et placeat dolores expedita quidem repudiandae excepturi eligendi! Voluptatibus eligendi architecto quo qui aperiam possimus reprehenderit quis praesentium consectetur cumque et dicta similique nostrum ipsum, esse doloremque quaerat tenetur repudiandae quasi ducimus exercitationem. Hic.</div>
+                <div className="text-justify text-[14px] text-[#ffffff]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque similique earum officia repellendus neque incidunt suscipit, et placeat dolores expedita quidem repudiandae excepturi eligendi! Voluptatibus eligendi architecto quo qui aperiam possimus reprehenderit quis praesentium consectetur cumque et dicta similique nostrum ipsum, esse doloremque quaerat tenetur repudiandae quasi ducimus exercitationem. Hic.</div>
 
                 <div className="h-auto w-full flex justify-between items-center">
                     <button className="flex flex-row justify-center items-center gap-1 text-[14px] bg-[#000] px-5 py-4 text-[#fff] rounded">Read More<IoIosArrowForward /></button>
@@ -32,7 +32,7 @@ export default function Article() {
             {/* article one */}
             <div className="flex flex-col justify-center items-center gap-3 h-auto">
                 <img src={post} alt="" className="h-auto w-[100%] rounded" />
-                <div className="text-justify text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque similique earum officia repellendus neque incidunt suscipit, et placeat dolores expedita quidem repudiandae excepturi eligendi! Voluptatibus eligendi architecto quo qui aperiam possimus reprehenderit quis praesentium consectetur cumque et dicta similique nostrum ipsum, esse doloremque quaerat tenetur repudiandae quasi ducimus exercitationem. Hic.</div>
+                <div className="text-justify text-[14px] text-[#fff]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque similique earum officia repellendus neque incidunt suscipit, et placeat dolores expedita quidem repudiandae excepturi eligendi! Voluptatibus eligendi architecto quo qui aperiam possimus reprehenderit quis praesentium consectetur cumque et dicta similique nostrum ipsum, esse doloremque quaerat tenetur repudiandae quasi ducimus exercitationem. Hic.</div>
 
                 <div className="h-auto w-full flex justify-between items-center">
                     <button className="flex flex-row justify-center items-center gap-1 text-[14px] bg-[#000] px-5 py-4 text-[#fff] rounded">Read More<IoIosArrowForward /></button>
@@ -55,7 +55,7 @@ export default function Article() {
             {/* article two */}
             <div className="flex flex-col justify-center items-center gap-3 h-auto">
                 <img src={post} alt="" className="h-auto w-[100%] rounded" />
-                <div className="text-justify text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque similique earum officia repellendus neque incidunt suscipit, et placeat dolores expedita quidem repudiandae excepturi eligendi! Voluptatibus eligendi architecto quo qui aperiam possimus reprehenderit quis praesentium consectetur cumque et dicta similique nostrum ipsum, esse doloremque quaerat tenetur repudiandae quasi ducimus exercitationem. Hic.</div>
+                <div className="text-justify text-[14px] text-[#fff]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque similique earum officia repellendus neque incidunt suscipit, et placeat dolores expedita quidem repudiandae excepturi eligendi! Voluptatibus eligendi architecto quo qui aperiam possimus reprehenderit quis praesentium consectetur cumque et dicta similique nostrum ipsum, esse doloremque quaerat tenetur repudiandae quasi ducimus exercitationem. Hic.</div>
 
                 <div className="h-auto w-full flex justify-between items-center">
                     <button className="flex flex-row justify-center items-center gap-1 text-[14px] bg-[#000] px-5 py-4 text-[#fff] rounded">Read More<IoIosArrowForward /></button>

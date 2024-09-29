@@ -3,6 +3,7 @@ import Logo from "./Child/Logo";
 import { IoHome } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Search from "./Child/Search";
+import DiscussionView from "./Child/discussionView";
 
 export default function Navigation() {
     const [isFixed, setIsFixed] = useState(false);
@@ -43,6 +44,7 @@ export default function Navigation() {
                 </li>
                 <li className="flex justify-center items-center gap-1 text-[16px] cursor-pointer text-[#483d30]">
                     Discussion Point <IoMdArrowDropdown className="h-[21.8px] w-auto" />
+                    <DiscussionView />
                 </li>
                 <li className="flex justify-center items-center gap-3 text-[16px] cursor-pointer text-[#483d30]" onClick={ () => window.location.href = "/post" }>
                     Post
