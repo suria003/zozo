@@ -1,7 +1,6 @@
 import BallonImage from "../../Assets/back.jpg";
 import Article from "./Child/Article";
-
-import Event from "./Event/Event";
+import RecentPost from "./Child/RecentPost";
 
 import { ImLinkedin2 } from "react-icons/im";
 import { ImTwitter } from "react-icons/im";
@@ -38,15 +37,12 @@ export default function Index() {
                     <ImTwitter className="bg-transprent text-[#2e333d] h-[34.8px] w-auto p-[5px] cursor-pointer" />
                     <AiFillInstagram className="bg-transprent text-[#fa7e1e] h-[34.8px] w-auto cursor-pointer" />
                 </div>
-                <section className="absolute top-[5%] left-0 transform translate-x-1/2 translate-y-1/2 w-[50%]">
-                    <Event />
-                </section>
             </section>
 
-            <section className="relative flexjustify-center items-start gap-10 h-auto w-[80%] m-auto ">
+            <section className="relative flex justify-center items-start gap-10 h-auto w-[80%] m-auto ">
                 <Article />
+                <RecentPost />
             </section>
-
             <section className="relative h-auto w-[90%] m-auto mt-10">
 
             </section>

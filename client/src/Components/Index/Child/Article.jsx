@@ -5,7 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 export default function Article() {
     return (
-        <article className="relative flex flex-col items-center gap-2 h-auto w-[70%] p-[25px]">
+        <article className="relative flex flex-col items-center gap-2 h-auto w-[70%] ">
 
             <div className="flex flex-col justify-center items-center gap-3 h-auto">
                 <img src={post} alt="" className="h-auto w-[100%] rounded" />
